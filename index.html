@@ -51,9 +51,23 @@
         header {
             background-color: var(--secondary-color);
             color: rgb(94, 179, 96);
-            text-align: center;
-            padding: 8rem 0 4rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4rem 2rem;
             margin-top: 0;
+            flex-wrap: wrap;
+        }
+
+        .header-left {
+            max-width: 50%;
+        }
+
+        .header-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            text-align: right;
         }
 
         .container {
@@ -96,6 +110,24 @@
             width: 100%;
         }
 
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 3rem 1rem;
+            }
+
+            .header-left,
+            .header-right {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .profile-img {
+                margin: 1rem 0;
+            }
+        }
+
         @media (max-width: 600px) {
             nav ul {
                 flex-direction: column;
@@ -121,9 +153,15 @@
     </nav>
 
     <header>
-        <img src="/api/placeholder/200/200" alt="Your Profile Picture" class="profile-img">
-        <h1>Your Name</h1>
-        <p>Position • Institution</p>
+        <div class="header-left">
+            <h1>Your Name</h1>
+            <p>Position • Institution</p>
+            <p>Welcome! I am a [Your Position] at [Your Institution]. My research focuses on [Your Research Areas].</p>
+            <p>I received my [Degree] from [University] in [Year].</p>
+        </div>
+        <div class="header-right">
+            <img src="/api/placeholder/200/200" alt="Your Profile Picture" class="profile-img">
+        </div>
     </header>
 
     <div class="container">
