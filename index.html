@@ -56,18 +56,27 @@
             align-items: center;
             padding: 4rem 4rem;
             margin-top: 0;
-            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+            row-gap: 2rem;
+            column-gap: 2rem;
         }
 
         .header-left {
+            order: 1;
             max-width: 50%;
-        }
-
-        .header-right {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: right;
+        }
+
+        .header-right {
+            order: 2;
+            flex-shrink: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
 
         .container {
@@ -114,12 +123,12 @@
             header {
                 flex-direction: column;
                 text-align: center;
-                padding: 3rem 1rem;
+                padding: 1rem 1rem;
             }
 
             .header-left,
             .header-right {
-                max-width: 100%;
+                max-width: 50%;
                 text-align: center;
             }
 
@@ -136,7 +145,7 @@
             }
             
             header {
-                padding-top: 12rem;
+                padding-top: 1rem;
             }
         }
     </style>
