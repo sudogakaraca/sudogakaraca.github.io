@@ -201,10 +201,11 @@ footer {
 }
 
 #publications h3.indent {
-    margin-left: 3rem; /* Adjust the value as needed */
+    margin-left: 2rem; /* Adjust the value as needed */
     font-style: italic;
     color: var(--thirtary-color);
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 
