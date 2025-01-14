@@ -5,7 +5,7 @@
     --secondary-color: #e8e1f0;
     --thirtary-color: #8661b1;
     --text-color: #333;
-    --light-gray: #f5f5f5;
+    --light-gray: #f8f8f8;
 }
 
 html {
@@ -98,7 +98,11 @@ h1{
     color: var(--light-gray);
 }
 
-h2, h3 {
+h2{
+    color: var(--thirtary-color);
+}
+
+h3 {
     color: var(--primary-color);
 }
 
@@ -170,6 +174,31 @@ footer {
         text-align: center;
     }
 }
+
+
+/* Style for all links within the .publications section */
+#publications a.publink {
+    color: var(--thirtary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect: change the link color and add an underline when hovered */
+#publications a.publink:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    font-weight: bold;
+    background-color: var(--thirtary-color);
+    padding: 0.5rem 0.5rem;
+    border-radius: 8px;
+}
+
+/* Style for links when they're visited */
+#publications a.publink:visited {
+    color: #800080; /* Purple color after the link has been clicked */
+}
+
 
 /* CONTACT */
 .social-button {
