@@ -5,7 +5,7 @@
     --secondary-color: #e8e1f0;
     --thirtary-color: #8661b1;
     --text-color: #333;
-    --light-gray: #f8f8f8;
+    --light-gray: #fbfbfb;
 }
 
 html {
@@ -91,7 +91,7 @@ header {
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 h1{
@@ -118,7 +118,7 @@ h3 {
 .publication {
     background-color: var(--light-gray);
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     border-radius: 4px;
 }
 
@@ -178,7 +178,7 @@ footer {
 
 /* Style for all links within the .publications section */
 #publications a.publink {
-    color: var(--thirtary-color);
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -200,8 +200,10 @@ footer {
 }
 
 #publications h3.indent {
-    margin-left: 2rem; /* Adjust the value as needed */
+    margin-left: 3rem; /* Adjust the value as needed */
     font-style: italic;
+    color: var(--thirtary-color);
+    margin-top: 2rem;
 }
 
 
@@ -251,7 +253,7 @@ footer {
 }
 
 .teaching-date {
-    color: var(--thirtary-color);
+    color: var(--text-color);
     font-weight: bold; /* Make the date bold */
     margin-right: 2rem; /* Space between the date and the text */
 }
@@ -259,7 +261,6 @@ footer {
 #teaching a.teachlink {
     color: var(--thirtary-color);
     text-decoration: none;
-    font-weight: bold;
 }
 
 /* Hover effect: change the link color and add an underline when hovered */
