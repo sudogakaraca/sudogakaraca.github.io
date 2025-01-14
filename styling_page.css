@@ -244,6 +244,41 @@ footer {
 }
 
 
+/* Style for all links within the .teaching section */
+#teaching .teaching-item {
+    display: flex; /* Flexbox to arrange items in a row */
+    align-items: center; /* Vertically center-align the items */
+}
+
+.teaching-date {
+    color: var(--thirtary-color);
+    font-weight: bold; /* Make the date bold */
+    margin-right: 2rem; /* Space between the date and the text */
+}
+
+#teaching a.teachlink {
+    color: var(--thirtary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect: change the link color and add an underline when hovered */
+#teaching a.teachlink:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    font-weight: bold;
+    background-color: var(--thirtary-color);
+    padding: 0.2rem 0.2rem;
+    border-radius: 8px;
+}
+
+/* Style for links when they're visited */
+#teaching a.teachlink:visited {
+    color: #800080; /* Purple color after the link has been clicked */
+}
+
+
 /* CONTACT */
 .social-button {
     border: none;
