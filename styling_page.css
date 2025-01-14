@@ -199,6 +199,50 @@ footer {
     color: #800080; /* Purple color after the link has been clicked */
 }
 
+#publications h3.indent {
+    margin-left: 2rem; /* Adjust the value as needed */
+    font-style: italic;
+}
+
+
+/* Style for all links within the .news section */
+#news .news-item {
+    display: flex; /* Flexbox to arrange items in a row */
+    align-items: center; /* Vertically center-align the items */
+}
+
+.news-date {
+    color: var(--thirtary-color);
+    font-weight: bold; /* Make the date bold */
+    margin-right: 2rem; /* Space between the date and the text */
+}
+
+.news-text {
+    margin-right: 0rem; /* Space between the normal text and the link */
+}
+
+#news a.newslink {
+    color: var(--thirtary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect: change the link color and add an underline when hovered */
+#news a.newslink:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    font-weight: bold;
+    background-color: var(--thirtary-color);
+    padding: 0.2rem 0.2rem;
+    border-radius: 8px;
+}
+
+/* Style for links when they're visited */
+#news a.newslink:visited {
+    color: #800080; /* Purple color after the link has been clicked */
+}
+
 
 /* CONTACT */
 .social-button {
