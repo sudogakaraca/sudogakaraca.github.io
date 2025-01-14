@@ -5,7 +5,7 @@
     --secondary-color: #e8e1f0;
     --thirtary-color: #8661b1;
     --text-color: #333;
-    --light-gray: #fbfbfb;
+    --light-gray: #f8f8f8;
 }
 
 html {
@@ -104,6 +104,7 @@ h2{
 
 h3 {
     color: var(--primary-color);
+    margin: 0;
 }
 
 .profile-img {
@@ -118,7 +119,7 @@ h3 {
 .publication {
     background-color: var(--light-gray);
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     border-radius: 4px;
 }
 
@@ -203,7 +204,7 @@ footer {
     margin-left: 3rem; /* Adjust the value as needed */
     font-style: italic;
     color: var(--thirtary-color);
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 
@@ -253,13 +254,13 @@ footer {
 }
 
 .teaching-date {
-    color: var(--text-color);
+    color: var(--thirtary-color);
     font-weight: bold; /* Make the date bold */
     margin-right: 2rem; /* Space between the date and the text */
 }
 
 #teaching a.teachlink {
-    color: var(--thirtary-color);
+    color: var(--text-color);
     text-decoration: none;
 }
 
