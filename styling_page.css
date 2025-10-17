@@ -23,7 +23,7 @@ html {
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     color: var(--text-color);
 }
@@ -39,7 +39,8 @@ nav {
 
 nav ul {
     justify-content: center;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
     gap: 2rem;
@@ -53,8 +54,8 @@ nav a {
 
 nav a:hover {
     color: var(--secondary-color);
-    transform: scale(1.1);
-    transition: transform 0.2s ease-in-out;
+    /* transform: scale(1.1);
+    transition: transform 0.2s ease-in-out; */
     font-weight: bold;
     background-color: var(--thirtary-color);
     padding: 0.5rem 0.5rem;
@@ -191,8 +192,8 @@ footer {
 /* Hover effect: change the link color and add an underline when hovered */
 #publications a.publink:hover {
     color: var(--secondary-color);
-    transform: scale(1.1);
-    transition: transform 0.2s ease-in-out;
+    /* transform: scale(1.1);
+    transition: transform 0.2s ease-in-out; */
     font-weight: bold;
     background-color: var(--thirtary-color);
     padding: 0.5rem 0.5rem;
@@ -264,8 +265,8 @@ footer {
 /* Hover effect: change the link color and add an underline when hovered */
 #news a.newslink:hover {
     color: var(--secondary-color);
-    transform: scale(1.1);
-    transition: transform 0.2s ease-in-out;
+    /* transform: scale(1.1);
+    transition: transform 0.2s ease-in-out; */
     font-weight: bold;
     background-color: var(--thirtary-color);
     padding: 0.2rem 0.2rem;
@@ -298,8 +299,8 @@ footer {
 /* Hover effect: change the link color and add an underline when hovered */
 #teaching a.teachlink:hover {
     color: var(--secondary-color);
-    transform: scale(1.1);
-    transition: transform 0.2s ease-in-out;
+    /* transform: scale(1.1);
+    transition: transform 0.2s ease-in-out; */
     font-weight: bold;
     background-color: var(--thirtary-color);
     padding: 0.2rem 0.2rem;
