@@ -90,11 +90,11 @@ header {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 section {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 h1{
