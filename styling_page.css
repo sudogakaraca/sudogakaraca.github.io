@@ -54,7 +54,7 @@ nav a:hover {
     border-radius: 8px;
 }
 
-/* header {
+header {
     background-color: var(--secondary-color);
     color: var(--thirtary-color);
     display: flex;
@@ -78,12 +78,11 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-} */
+}
 
 .container {
     max-width: 800px;
     margin: 0 auto;
-    margin-top: 2rem;
     padding: 2rem;
 }
 
@@ -157,7 +156,7 @@ footer {
         align-items: center;
     }
 
-    /* header {
+    header {
         flex-direction: column;
         text-align: center;
         margin-top: 0rem;
@@ -171,7 +170,7 @@ footer {
         max-width: 50%;
         flex-shrink: 3;
         text-align: center;
-    } */
+    }
 }
 
 
