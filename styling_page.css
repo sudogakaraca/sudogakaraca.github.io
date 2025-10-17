@@ -219,7 +219,7 @@ footer {
 }
 
 .scrollable {
-    height: 500px; /* or any value */
+    height: 100px; /* or any value */
     overflow-y: auto;
 }
 
