@@ -23,9 +23,10 @@ html {
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     color: var(--text-color);
+    max-width: 900px; /* keeps content nicely centered */
 }
 
 nav {
@@ -38,12 +39,13 @@ nav {
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
     justify-content: center;
+    padding-left: 0;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
     gap: 2rem;
+    max-width: 900px; /* aligns with body width */
 }
 
 nav a {
@@ -219,9 +221,31 @@ footer {
     align-items: center; /* Vertically center-align the items */
 }
 
-.scrollable {
-    height: 100px; /* adjust as needed */
+.news-item {
+    margin-bottom: 0.3rem; /* tighter spacing */
+}
+
+.news-item p {
+    margin: 0; /* removes extra paragraph spacing */
+}
+
+/* Make the news section scrollable but keep the header fixed */
+#news .scrollable {
+    max-height: 200px; /* adjust as needed */
     overflow-y: auto;
+    padding-right: 0.5rem; /* prevents scrollbar overlap */
+    margin-top: 1rem;
+    border-radius: 8px;
+    background-color: var(--light-gray);
+}
+
+#news .scrollable::-webkit-scrollbar {
+    width: 6px;
+}
+
+#news .scrollable::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
 }
 
 .news-date {
