@@ -1,5 +1,12 @@
 /* BASE */
 
+/* Notes:
+- make the background of header and link bar white but keep the colors of the text.
+    - examples: https://lujainibrahim.com/#research, https://www.aliciadevos.com/
+- make the news section scrollable 
+    - example, https://sbali11.github.io/
+*/
+
 :root {
     --primary-color: #cebde2;
     --secondary-color: #e8e1f0;
@@ -210,6 +217,35 @@ footer {
     display: flex; /* Flexbox to arrange items in a row */
     align-items: center; /* Vertically center-align the items */
 }
+
+/* Add this to your existing CSS */
+
+#news {
+    max-height: 400px; /* Adjust height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 1rem; /* Add space for scrollbar */
+}
+
+/* Optional: Style the scrollbar for better appearance */
+#news::-webkit-scrollbar {
+    width: 8px;
+}
+
+#news::-webkit-scrollbar-track {
+    background: var(--light-gray);
+    border-radius: 10px;
+}
+
+#news::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+#news::-webkit-scrollbar-thumb:hover {
+    background: var(--thirtary-color);
+}
+
+/* new addition ^
 
 .news-date {
     color: var(--thirtary-color);
