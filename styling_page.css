@@ -6,14 +6,29 @@
     - examples: https://lujainibrahim.com/#research, https://www.aliciadevos.com/
 - make the news section scrollable 
     - example, https://sbali11.github.io/
+
+-highlight the links in about and also the publication names with light grey
+
+
+- once you have enough publications create a new site!
+
+- add a resources page!
+
+
 */
 
 :root {
-    --primary-color: #cebde2;
+    --primary-color: #b9a3d3;
     --secondary-color: #e8e1f0;
-    --thirtary-color: #8661b1;
+    --thirtary-color: #764aa8;
     --text-color: #333;
     --light-gray: #f8f8f8;
+    --white-white: #fff;
+    /* --primary-color: #badb9c;
+    --secondary-color: #def1be;
+    --thirtary-color: #6b993c;
+    --text-color: #333;
+    --light-gray: #f8f8f8; */
 }
 
 html {
@@ -29,12 +44,13 @@ body {
 }
 
 nav {
-    background-color: var(--primary-color);
+    background-color: var(--white-white);
     padding: 1rem 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    align-items: center;
 }
 
 nav ul {
@@ -64,7 +80,7 @@ nav a:hover {
     border-radius: 8px;
 }
 
-header {
+/* header {
     background-color: var(--secondary-color);
     color: var(--thirtary-color);
     display: flex;
@@ -79,8 +95,8 @@ header {
     max-width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: right;
+    align-items: left;
+    text-align: left;
 }
 
 .header-right {
@@ -88,17 +104,18 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
+} */
 
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 7rem 0 0 0;
 }
 
 section {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
+
 
 h1{
     color: var(--light-gray);
@@ -106,6 +123,7 @@ h1{
 
 h2{
     color: var(--thirtary-color);
+    font-size: 24px;
 }
 
 h3 {
@@ -140,7 +158,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    header {
+    /* header {
         flex-direction: column;
         text-align: center;
         margin-top: 3rem;
@@ -153,7 +171,7 @@ footer {
         max-width: 50%;
         flex-shrink: 3;
         text-align: center;
-    }
+    } */
 }
 
 @media (max-width: 600px) {
@@ -166,7 +184,7 @@ footer {
         align-items: center;
     }
 
-    header {
+    /* header {
         flex-direction: column;
         text-align: center;
         margin-top: 0rem;
@@ -180,7 +198,28 @@ footer {
         max-width: 50%;
         flex-shrink: 3;
         text-align: center;
-    }
+    } */
+}
+
+#about a.aboutlink {
+    color: var(--thirtary-color);
+    text-decoration: none;
+}
+
+/* Hover effect: change the link color and add an underline when hovered */
+#about a.aboutlink:hover {
+    color: var(--secondary-color);
+    /* transform: scale(1.1);
+    transition: transform 0.2s ease-in-out; */
+    /* font-weight: bold; */
+    background-color: var(--thirtary-color);
+    padding: 0.2rem 0.2rem;
+    border-radius: 8px;
+}
+
+/* Style for links when they're visited */
+#about a.aboutlink:visited {
+    color: #800080; /* Purple color after the link has been clicked */
 }
 
 
@@ -204,6 +243,12 @@ footer {
     border-radius: 8px;
 }
 
+mark {
+    background-color: var(--secondary-color);
+    padding: 0.1rem 0.1rem;
+    border-radius: 8px;
+}
+
 /* Style for links when they're visited */
 #publications a.publink:visited {
     color: #800080; /* Purple color after the link has been clicked */
@@ -214,6 +259,7 @@ footer {
     font-style: italic;
     color: var(--thirtary-color);
     padding: 1rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -233,7 +279,7 @@ footer {
 
 /* Make the news section scrollable but keep the header fixed */
 #news .scrollable {
-    max-height: 200px; /* adjust as needed */
+    max-height: 250px; /* adjust as needed */
     overflow-y: auto;
     padding-right: 0.5rem; /* prevents scrollbar overlap */
     margin-top: 1rem;
@@ -284,35 +330,41 @@ footer {
 
 
 /* Style for all links within the .teaching section */
-#teaching .teaching-item {
-    display: flex; /* Flexbox to arrange items in a row */
-    align-items: center; /* Vertically center-align the items */
+#external .external-item {
+    display: flex;
+    align-items: center; /* Vertically center both items */
 }
 
-.teaching-date {
+.externalname {
     color: var(--thirtary-color);
-    font-weight: bold; /* Make the date bold */
-    margin-right: 2rem; /* Space between the date and the text */
+    font-weight: bold;
+    width: 20rem; /* Fixed width so all .external-text start at same place */
+    margin-right: 1rem;
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
-#teaching a.teachlink {
-    color: var(--text-color);
+.external-text {
+    flex: 1; /* Take up remaining space */
+}
+
+#external a.externallink {
+    color: var(--thirtary-color);
     text-decoration: none;
 }
 
 /* Hover effect: change the link color and add an underline when hovered */
-#teaching a.teachlink:hover {
-    color: var(--secondary-color);
+#external a.externallink:hover {
+    color: var(--thirtary-color);
     /* transform: scale(1.1);
     transition: transform 0.2s ease-in-out; */
     font-weight: bold;
-    background-color: var(--thirtary-color);
-    padding: 0.2rem 0.2rem;
+    background-color: var(--secondary-color);
+    padding: 0.3rem 0.3rem;
     border-radius: 8px;
 }
 
 /* Style for links when they're visited */
-#teaching a.teachlink:visited {
+#external a.externallink:visited {
     color: #800080; /* Purple color after the link has been clicked */
 }
 
@@ -324,23 +376,38 @@ footer {
   }
   
   .btn {
-    display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
+    align-items: center;
+    width: 55px;           /* ✅ Fixed size for all buttons */
+    height: 55px;          /* ✅ Makes them square and consistent */
+    display: inline-flex;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     background-color: transparent;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    padding: 0.75rem 0.75rem;
+    margin: 0.5 0.5rem;      /* Small spacing between buttons */
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
+
+  /* Ensure the icon (img or svg) fits nicely inside */
+.social-button img,
+.social-button svg {
+  width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hover effect: all highlight the same way */
+.social-button:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.1); /* Slight zoom for feedback */
+  border-radius: 8px;
+}
   
   button, [type="button"], [type="reset"], [type="submit"] {
     -webkit-appearance: button;
@@ -366,12 +433,23 @@ footer {
     text-align: center;
     font-size: 12px;
     font-style: italic;
+    padding-bottom: 20px;
   }
   
-  #social-wrappper {
+  #social-wrapper {
     display: block;
     text-align: center;
-    padding-bottom: 0px;
+    padding: 0;
+    margin: 0 0 0;
+  }
+
+  #contact {
+    margin-bottom: 0;
+    padding-top: 30px;
+}
+
+  .contact {
+    margin: 0 0 0;
   }
   
   .social-icons {
@@ -380,7 +458,7 @@ footer {
   
   .site-footer {
     border-top: 1px solid #e8e8e8;
-    padding: 30px 0;
+    padding-top: 30px;
     margin-left: 10%;
     margin-right: 10%;
   }
