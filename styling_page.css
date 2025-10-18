@@ -50,6 +50,8 @@ nav a {
     color: var(--thirtary-color);
     text-decoration: none;
     font-weight: bold;
+    padding: 0.5rem 0.5rem;
+    border-radius: 8px;
 }
 
 nav a:hover {
@@ -187,6 +189,8 @@ footer {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
+    padding: 0.5rem 0.5rem;
+    border-radius: 8px;
 }
 
 /* Hover effect: change the link color and add an underline when hovered */
