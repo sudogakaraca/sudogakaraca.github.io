@@ -54,13 +54,31 @@ nav {
     align-items: center;
 }
 
-nav ul {
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+/* Hide hamburger button on desktop */
+.nav-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--thirtary-color);
+  cursor: pointer;
+}
+
+.nav-links {
     justify-content: center;
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     gap: 2rem;
+    flex: 1; /* take remaining horizontal space */
 }
 
 nav a {
@@ -85,7 +103,7 @@ nav a:hover {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 7rem 1rem 0 1rem; /*initially this was 7 000 */
+    padding: 5rem 1rem 1rem 1rem
 }
 
 
@@ -138,6 +156,7 @@ footer {
 @media (max-width: 765px) {
     body {
         font-size: 16px;
+        -webkit-tap-highlight-color: transparent; /* removes grey overlay on iOS */
     }
 
     h2 {
@@ -150,7 +169,7 @@ footer {
     }
 
     .external-item {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
     }
 
@@ -162,7 +181,7 @@ footer {
         padding: 0.5rem 0;
     }
 
-    nav ul {
+    /* nav ul {
         flex-direction: column;
         align-items: center;
         gap: 0.75rem;
@@ -171,11 +190,50 @@ footer {
     nav a {
         font-size: 16px;
         padding: 0.4rem 0.6rem;
+    } */
+
+    .nav-toggle {
+    display: block;
+    }
+
+    /* Stack links vertically when expanded */
+    .nav-links {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--white-white);
+        width: 100%;
+        position: absolute;
+        top: 60px; /* just below navbar */
+        left: 0;
+        padding: 0.3rem 0;
+        gap: 0.5rem;
+        border-top: 2px solid var(--secondary-color);
+    }
+
+    /* Show menu when active */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a:active {
+        color: var(--secondary-color);
+        background-color: var(--thirtary-color);
+        padding: 0.5rem 0.5rem;
+        border-radius: 8px;
+        transform: scale(0.97); /* optional slight press effect */
+        transition: transform 0.05s ease-in-out;
+    }
+
+    /* Optional: slightly larger clickable area */
+    nav a {
+        font-size: 18px;
+        padding: 0.75rem;
     }
 
     .about-container {
     flex-direction: column-reverse;
-    text-align: center;
+    text-align: left;
     }
 
     .about-text {
@@ -469,7 +527,7 @@ mark {
   
   #design-credit {
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
     font-style: italic;
     padding-bottom: 20px;
   }
