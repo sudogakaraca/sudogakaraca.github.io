@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Su Doga Karaca: Academic Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Su Doga Karaca: Academic Portfolio</title>
 
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="styling_page.css">
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="styling_page.css">
+
+  <style>
+  ::-moz-selection { /* Code for Firefox */
+    color: #764aa8;
+    background: #e8e1f0;
+  }
+
+  ::selection {
+    color: #764aa8;
+    background: #e8e1f0;
+  }
+
+  li::marker {
+  color: #764aa8;
+  }
+  </style>
 
 </head>
 
@@ -41,29 +57,31 @@
   <div class="container">
     <section id="about">
       <h2>hi! you've reached Su Doga's page 👾</h2>
-        <p>Currently, I am a research coordinator at <a href="https://www.stanford.edu/" target="_blank" class="aboutlink">Stanford University</a>, 
-          mentored by <a href="https://www.jamil-zaki.com/" target="_blank" class="aboutlink">Prof. Jamil Zaki</a> 
-          and <a href="https://www.rui-pei.net/" target="_blank" class="aboutlink">Dr. Rui Pei</a>
-          at the <a href="https://www.ssnl.stanford.edu/" target="_blank" class="aboutlink">Stanford Social Neuroscience Lab</a>.</p>
-        <p>When I am not full-time-researching at SSNL, I am also collaborating with <a href="https://cs.stanford.edu/~diyiy/" target="_blank" class="aboutlink">Prof. Diyi Yang</a>
-          and <a href="https://calebziems.com/" target="_blank" class="aboutlink">Caleb Ziems</a>
-          at the <a href="https://saltlab.stanford.edu/" target="_blank" class="aboutlink">SALT Lab</a> 
-          in <a href="https://www.cs.stanford.edu/" target="_blank" class="aboutlink">Stanford CS</a> 
-          and <a href="https://nlp.stanford.edu/" target="_blank" class="aboutlink">NLP Group</a>.</p>
-        <p>Previously, I received my B.S. in Data Science (with Honors) and B.A. in Psychology (with Honors) from 
-          <a href="https://www.uchicago.edu/en" target="_blank" class="aboutlink">The University of Chicago</a>. 
-          I was fortunate to be advised by <a href="https://ycleong.github.io/" target="_blank" class="aboutlink">Prof. Yuan Chang Leong</a>
-          and work with <a href="https://rencalabro.github.io/" target="_blank" class="aboutlink">Ren Calabro</a>
-          at the <a href="https://mcnlab.uchicago.edu/" target="_blank" class="aboutlink">Computational Affective and Social Neuroscience Laboratory</a>
-          and the <a href="https://datascience.uchicago.edu/" target="_blank" class="aboutlink">Data Science Institute</a>.</p>
-        <br>
+      <div class="about-container">
+        <div class="about-text">
+          <p>I am a research coordinator at the <a href="https://www.ssnl.stanford.edu/" target="_blank" class="aboutlink">Stanford Social Neuroscience Lab</a>, 
+            mentored by <a href="https://www.jamil-zaki.com/" target="_blank" class="aboutlink">Prof. Jamil Zaki</a> 
+            and <a href="https://www.rui-pei.net/" target="_blank" class="aboutlink">Dr. Rui Pei</a>, working on the Stanford Communities Project. 
+            When I am not full-time-researching at SSNL, 
+            I am also collaborating with <a href="https://cs.stanford.edu/~diyiy/" target="_blank" class="aboutlink">Prof. Diyi Yang</a>
+            and <a href="https://calebziems.com/" target="_blank" class="aboutlink">Caleb Ziems</a>
+            at the <a href="https://saltlab.stanford.edu/" target="_blank" class="aboutlink">SALT Lab</a> 
+            in <a href="https://www.cs.stanford.edu/" target="_blank" class="aboutlink">Stanford CS</a> 
+            and <a href="https://nlp.stanford.edu/" target="_blank" class="aboutlink">NLP Group</a>.</p>
+          <p>Previously, I received my B.S. in Data Science (with Honors) and B.A. in Psychology (with Honors) from 
+            <a href="https://www.uchicago.edu/en" target="_blank" class="aboutlink">The University of Chicago</a>, 
+            advised by <a href="https://ycleong.github.io/" target="_blank" class="aboutlink">Prof. Yuan Chang Leong</a>
+            and worked with <a href="https://rencalabro.github.io/" target="_blank" class="aboutlink">Ren Calabro</a>
+            at the <a href="https://mcnlab.uchicago.edu/" target="_blank" class="aboutlink">Computational Affective and Social Neuroscience Laboratory</a>
+            and the <a href="https://datascience.uchicago.edu/" target="_blank" class="aboutlink">Data Science Institute</a>.</p>
+        </div>
+
+        <div class="about-image">
+          <img src="images/navbar/pp.png" alt="Your Name" class="profile-img">
+        </div>
+      </div>
         <p>
-          My past work covers how we learn stereotypes and social norms from spoken language,
-          diffusion of information (norms, affects, and biases) within online and offline social networks, and building socially-aware LLMs.
-        </p>
-        <br>
-        <p>
-          I am broadly interested in how social technologies shape human behavior and social cognition, mainly social norms, biases, and group/collective processes.
+          I am broadly interested in <mark>how social technologies shape human behavior and social cognition, mainly social norms, biases, and group/collective processes</mark>.
           I am particularly interested in how communicative technologies, such as language systems, online and offline media, (and now) chatbots, and large language models,
           mediate social influence and refine how people seek, share, and interpret information. 
           <ul>
@@ -74,8 +92,12 @@
               (as opposed to local communities) defined by algorithmically mediated, infinite information sources?</li>
           </ul>
         </p>
-        <br>
-        <p>You can reach me at su + karaca [at] stanford [dot] edu</p>
+        <p>
+          My past work covers how we learn stereotypes and social norms from spoken language,
+          diffusion of information (norms, affects, and biases) within online and offline social networks, 
+          and divergent interpretations of narratives we consume (news, books, media...).
+        </p>
+        <p>You can reach me at <mark>su + karaca [at] stanford [dot] edu</mark></p>
     </section>
         
     <section id="news">
@@ -195,8 +217,22 @@
               Society for Personality and Social Psychology (SPSP) 2026 Annual Convention 
               (Main Conference; Group Processes & Intergroup Relations Preconference; Political Psychology Preconference) [<i>poster</i>]</p>
             <a href="https://spsp.org/events/annual-convention" target="_blank" class="publink">Conference Page</a>&nbsp;&nbsp;
-            <a href="https://docs.google.com/document/d/1Q0wHVL_StHfOfm6FCdN1FRJHlUJ--s_rWT4Tyx758qE/edit?usp=sharing" target="_blank" class="publink">Abstract</a>&nbsp;&nbsp;
             <a href="/api/placeholder/200/200" target="_blank" class="publink">Poster</a>&nbsp;&nbsp;
+            <a href="#" class="publink abstract-toggle">Abstract</a>
+              <div class="abstract-content">
+                <p>
+                  Young adults in the U.S. report rising political anxiety and declining wellbeing, 
+                  yet little is known about how they navigate everyday social life under major collective stressors. 
+                  To investigate, we surveyed ~3,000 undergraduates from the same community in a three-week ecological momentary assessment 
+                  (EMA) study spanning the 2024 U.S. national election, along with pre- and post-election trait surveys six months apart. 
+                  Participants completed daily EMAs on wellbeing (happiness, sadness, stress, anger) and social interactions (partner, closeness, content, quality). 
+                  We use multilevel models to test two hypotheses: Selection–whether reactivity to election stress (anticipatory and recovery) predicted shifts in interactions 
+                  (e.g., avoiding extremity or high-disagreement, seeking homophilous or norm-consistent ties); 
+                  and Buffering–whether interactions moderate stress-affect links. Preliminary findings suggest that while having an interaction generally buffers stress, 
+                  interactions between certain groups, such as low-income, high-stress students, can predict higher stress and lower wellbeing. 
+                  Our results reveal how collective stressors ripple through young adult social networks.
+                </p>
+              </div>
           </div>
 
           <div class="publication">
@@ -277,5 +313,16 @@
       </div>
       </section>
       </div>
+
+<script>
+document.querySelectorAll('.abstract-toggle').forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    const abstract = link.nextElementSibling;
+    abstract.classList.toggle('show');
+  });
+});
+</script>
+
 </body>
 </html>
